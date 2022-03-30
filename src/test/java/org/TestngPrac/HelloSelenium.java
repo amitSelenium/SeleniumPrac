@@ -1,3 +1,5 @@
+package org.TestngPrac;
+
 import org.testng.annotations.Test;
 
 public class HelloSelenium

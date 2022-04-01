@@ -19,12 +19,19 @@ public class NavigationCode
 		driver.get("https://www.google.com/");
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi' and @name='q']")).sendKeys("https://www.youtube.com", Keys.ENTER);
 		Thread.sleep(2000);
+		//Refreshing the page
 		driver.navigate().refresh();
 		Thread.sleep(2000);
+		
+		//Navigating to icici bank website
 		driver.navigate().to("https://www.icicibank.com/");
 		Thread.sleep(2000);
+		
+		//Navigating to previous page
 		driver.navigate().back();
 		Thread.sleep(2000);
+		
+		//Navigating again to icici bank website
 		driver.navigate().forward();
 		driver.quit();
 	}
